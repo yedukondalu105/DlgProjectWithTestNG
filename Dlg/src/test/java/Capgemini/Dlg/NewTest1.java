@@ -58,7 +58,7 @@ public class NewTest1 extends BaseTest {
 			e.printStackTrace();
 		}*/
 		test1Page.enterCredentials("test", "dontknow");
-		
+		System.out.println("Credentials entered");
 	//	capScn.printScreen(NewTest1.class.getName(),methodName,"Step2");
 		
 		
@@ -66,6 +66,7 @@ public class NewTest1 extends BaseTest {
 		//data.getData();
 		//LoggerUtil logUtil=new LoggerUtil();
 		EnvironmentalVariables env=new EnvironmentalVariables();
+		System.out.println("All steps executed");
 		//logUtil.logger.debug("Test Log");
 		//logUtil.logger.info(env.prop.getProperty("Browser"));
 		
