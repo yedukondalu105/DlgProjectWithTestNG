@@ -34,11 +34,11 @@ public class NewTest1 extends BaseTest {
   
 	@Test(/*groups={"Regression"},*/dataProvider="data" )
   public void testSignUP1(String userName) {
-		CaptureScreenshot capScn=new CaptureScreenshot(driver);
+	//	CaptureScreenshot capScn=new CaptureScreenshot(driver);
 		driver.get("https://www.zoho.com/");
 		driver.manage().window().maximize();
 		String methodName=Thread.currentThread().getStackTrace()[1].getMethodName();
-		capScn.printScreen(NewTest1.class.getName(),methodName,"Step1");
+	//	capScn.printScreen(NewTest1.class.getName(),methodName,"Step1");
 		test1Page=new NewTest1Page(driver);
 		test1Page.clickFreeSignUp();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -59,7 +59,7 @@ public class NewTest1 extends BaseTest {
 		}*/
 		test1Page.enterCredentials("test", "dontknow");
 		
-		capScn.printScreen(NewTest1.class.getName(),methodName,"Step2");
+	//	capScn.printScreen(NewTest1.class.getName(),methodName,"Step2");
 		
 		
 		//data=new Data();
