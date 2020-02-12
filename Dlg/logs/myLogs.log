@@ -1,0 +1,8 @@
+[INFO ] 2019-11-10 15:25:00.833 [main] LoggerUtil - Test Log
+[INFO ] 2019-11-10 15:27:04.995 [main] LoggerUtil - Test Log
+[DEBUG] 2019-11-10 15:30:21.998 [main] LoggerUtil - Test Log
+[DEBUG] 2019-11-10 15:35:09.539 [main] LoggerUtil - Test Log
+[DEBUG] 2019-11-10 15:35:51.386 [main] LoggerUtil - Test Log
+[DEBUG] 2019-11-10 15:36:42.426 [main] LoggerUtil - Test Log
+[DEBUG] 2019-11-10 17:09:37.570 [main] LoggerUtil - Test Log
+[INFO ] 2019-11-10 17:09:37.575 [main] LoggerUtil - Chrome
