@@ -32,8 +32,8 @@ public class BaseTest {
 //	  }
 	
 	  
-		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver");
-		  driver=new FirefoxDriver();
+		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
+		  driver=new ChromeDriver();
 
 	 
 	  
