@@ -32,7 +32,7 @@ public class BaseTest {
 //	  }
 	
 	  
-		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver");
 		  driver=new FirefoxDriver();
 
 	 
