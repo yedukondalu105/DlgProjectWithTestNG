@@ -5,7 +5,7 @@
     <classes>
       <class name="Capgemini.Dlg.NewTest1">
         <methods>
-          <include name="testSignUP1"/>
+          <include name="testSignUP1" invocation-numbers="0"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>

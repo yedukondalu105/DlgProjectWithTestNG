@@ -1,12 +1,13 @@
 package Capgemini.Dlg;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Capgemini.Base.BaseTest;
 import Pages.Capgemini.Dlg.NewTest1Page;
-import Utilities.Capgemini.Dlg.CaptureScreenshot;
 import Utilities.Capgemini.Dlg.Data;
 import Utilities.Capgemini.Dlg.EnvironmentalVariables;
 
@@ -42,6 +43,19 @@ public class NewTest1 extends BaseTest {
 		test1Page=new NewTest1Page(driver);
 		test1Page.clickFreeSignUp();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		//We can forcebly focus on a specific element by using this
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].focus();", driver.findElement(By.cssSelector("input#password")));
+		
+		//To enter text into current focussed element
+		//driver.switchTo().activeElement().sendKeys("HI");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		/*try {
 			Robot robot=new Robot();
 			StringSelection ss=new StringSelection("upal.yk@gmail.com");

@@ -7,13 +7,17 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import Utilities.Capgemini.Dlg.EnvironmentalVariables;
 /*@Listeners(Utilities.Capgemini.Dlg.TestResultListener.class)*/
 public class BaseTest {
   public WebDriver driver;
-  
+  public EnvironmentalVariables env;
   //@Parameters({"Browser"})
   @BeforeMethod
   public void beforeTest(/*String browser*/) {
+	  env=new EnvironmentalVariables();
+	  
 //	  if(browser.equalsIgnoreCase("chrome")){
 //		  System.setProperty("webdriver.chrome.driver", "./BrowserDrivers/chromedriver.exe");
 //		  driver=new ChromeDriver();
@@ -32,10 +36,16 @@ public class BaseTest {
 //	  }
 	
 	  
+		
+
+	 if(env.prop.getProperty("OS").equalsIgnoreCase("windows")) {
 		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
 		  driver=new ChromeDriver();
-
-	 
+	 }
+	 else if(env.prop.getProperty("OS").equalsIgnoreCase("linux")) {
+		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver");
+		  driver=new ChromeDriver();
+	 }
 	  
 	  
 	  
