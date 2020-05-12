@@ -50,8 +50,8 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 		  driver=new ChromeDriver();
 	 }
 	 else if(env.prop.getProperty("OS").equalsIgnoreCase("linux")) {
-		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver");
-		  driver=new ChromeDriver(options);
+		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver");
+		  driver=new FirefoxDriver();
 	 }
 	  
 	  
