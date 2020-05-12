@@ -1,12 +1,13 @@
 package Capgemini.Base;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import Utilities.Capgemini.Dlg.EnvironmentalVariables;
 /*@Listeners(Utilities.Capgemini.Dlg.TestResultListener.class)*/
