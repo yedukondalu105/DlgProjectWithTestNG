@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="69245" started-at="2020-05-12T11:30:32Z" finished-at="2020-05-12T11:31:41Z">
+  <suite name="Suite" duration-ms="51519" started-at="2020-05-12T13:53:45Z" finished-at="2020-05-12T13:54:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="69245" started-at="2020-05-12T11:30:32Z" finished-at="2020-05-12T11:31:41Z">
+    <test name="Test" duration-ms="51519" started-at="2020-05-12T13:53:45Z" finished-at="2020-05-12T13:54:36Z">
       <class name="Capgemini.Dlg.NewTest1">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="beforeTest" is-config="true" duration-ms="17991" started-at="2020-05-12T11:30:32Z" finished-at="2020-05-12T11:30:50Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Capgemini.Dlg.NewTest1@6df97b55]" name="beforeTest" is-config="true" duration-ms="12410" started-at="2020-05-12T13:53:45Z" finished-at="2020-05-12T13:53:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testSignUP1(java.lang.String)[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="testSignUP1" duration-ms="15299" started-at="2020-05-12T11:30:50Z" data-provider="data" finished-at="2020-05-12T11:31:06Z">
+        <test-method status="PASS" signature="testSignUP1(java.lang.String)[pri:0, instance:Capgemini.Dlg.NewTest1@6df97b55]" name="testSignUP1" duration-ms="17995" started-at="2020-05-12T13:53:57Z" data-provider="data" finished-at="2020-05-12T13:54:15Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignUP1 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="afterTest" is-config="true" duration-ms="7539" started-at="2020-05-12T11:31:06Z" finished-at="2020-05-12T11:31:13Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Capgemini.Dlg.NewTest1@6df97b55]" name="afterTest" is-config="true" duration-ms="694" started-at="2020-05-12T13:54:15Z" finished-at="2020-05-12T13:54:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="beforeTest" is-config="true" duration-ms="7530" started-at="2020-05-12T11:31:13Z" finished-at="2020-05-12T11:31:21Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Capgemini.Dlg.NewTest1@6df97b55]" name="beforeTest" is-config="true" duration-ms="5172" started-at="2020-05-12T13:54:16Z" finished-at="2020-05-12T13:54:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testSignUP1(java.lang.String)[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="testSignUP1" duration-ms="15289" started-at="2020-05-12T11:31:21Z" data-provider="data" finished-at="2020-05-12T11:31:36Z">
+        <test-method status="PASS" signature="testSignUP1(java.lang.String)[pri:0, instance:Capgemini.Dlg.NewTest1@6df97b55]" name="testSignUP1" duration-ms="14592" started-at="2020-05-12T13:54:21Z" data-provider="data" finished-at="2020-05-12T13:54:35Z">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignUP1 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="afterTest" is-config="true" duration-ms="5542" started-at="2020-05-12T11:31:36Z" finished-at="2020-05-12T11:31:41Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Capgemini.Dlg.NewTest1@6df97b55]" name="afterTest" is-config="true" duration-ms="622" started-at="2020-05-12T13:54:35Z" finished-at="2020-05-12T13:54:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

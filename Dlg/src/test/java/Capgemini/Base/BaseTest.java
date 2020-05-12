@@ -39,21 +39,26 @@ public class BaseTest {
 //	  }
 	
 	  
-		ChromeOptions options = new ChromeOptions();
+		/*ChromeOptions options = new ChromeOptions();
 options.addArguments("start-maximized"); // open Browser in maximized mode
 options.addArguments("disable-infobars"); // disabling infobars
 options.addArguments("--disable-extensions"); // disabling extensions
 options.addArguments("--disable-gpu"); // applicable to windows os only
 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 options.addArguments("--no-sandbox"); // Bypass OS security model
+*/
+	  
+	  ChromeOptions chromeOptions = new ChromeOptions();
 
+      chromeOptions.addArguments("--headless");
+     
 	 if(env.prop.getProperty("OS").equalsIgnoreCase("windows")) {
-		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver.exe");
-		  driver=new FirefoxDriver();
+		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
+		  driver = new ChromeDriver(chromeOptions);
 	 }
 	 else if(env.prop.getProperty("OS").equalsIgnoreCase("linux")) {
-		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver");
-		  driver=new FirefoxDriver();
+		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver");
+		  driver = new ChromeDriver(chromeOptions);
 	 }
 	  
 	  
