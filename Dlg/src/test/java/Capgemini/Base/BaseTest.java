@@ -1,6 +1,6 @@
 package Capgemini.Base;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -36,7 +36,13 @@ public class BaseTest {
 //	  }
 	
 	  
-		
+		ChromeOptions options = new ChromeOptions();
+options.addArguments("start-maximized"); // open Browser in maximized mode
+options.addArguments("disable-infobars"); // disabling infobars
+options.addArguments("--disable-extensions"); // disabling extensions
+options.addArguments("--disable-gpu"); // applicable to windows os only
+options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+options.addArguments("--no-sandbox"); // Bypass OS security model
 
 	 if(env.prop.getProperty("OS").equalsIgnoreCase("windows")) {
 		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
@@ -44,7 +50,7 @@ public class BaseTest {
 	 }
 	 else if(env.prop.getProperty("OS").equalsIgnoreCase("linux")) {
 		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver");
-		  driver=new ChromeDriver();
+		  driver=new ChromeDriver(options);
 	 }
 	  
 	  
