@@ -43,8 +43,8 @@ public class BaseTest {
 		  driver=new ChromeDriver();
 	 }
 	 else if(env.prop.getProperty("OS").equalsIgnoreCase("linux")) {
-		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver");
-		  driver=new ChromeDriver();
+		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/firefoxdriver");
+		  driver=new FirefoxDriver();
 	 }
 	  
 	  
