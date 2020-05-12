@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -12,6 +13,7 @@ import Utilities.Capgemini.Dlg.EnvironmentalVariables;
 /*@Listeners(Utilities.Capgemini.Dlg.TestResultListener.class)*/
 public class BaseTest {
   public WebDriver driver;
+  public RemoteWebDriver rDriver;
   public EnvironmentalVariables env;
   //@Parameters({"Browser"})
   @BeforeMethod
@@ -39,12 +41,12 @@ public class BaseTest {
 		
 
 	 if(env.prop.getProperty("OS").equalsIgnoreCase("windows")) {
-		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver.exe");
-		  driver=new ChromeDriver();
+		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver.exe");
+		  driver=new FirefoxDriver();
 	 }
 	 else if(env.prop.getProperty("OS").equalsIgnoreCase("linux")) {
-		  System.setProperty("webdriver.chrome.driver", "BrowserDrivers/chromedriver");
-		  driver=new ChromeDriver();
+		  System.setProperty("webdriver.gecko.driver", "BrowserDrivers/geckodriver");
+		  driver=new FirefoxDriver();
 	 }
 	  
 	  

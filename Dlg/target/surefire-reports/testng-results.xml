@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="69245" started-at="2020-05-12T11:30:32Z" finished-at="2020-05-12T11:31:41Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="69245" started-at="2020-05-12T11:30:32Z" finished-at="2020-05-12T11:31:41Z">
+      <class name="Capgemini.Dlg.NewTest1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="beforeTest" is-config="true" duration-ms="17991" started-at="2020-05-12T11:30:32Z" finished-at="2020-05-12T11:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSignUP1(java.lang.String)[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="testSignUP1" duration-ms="15299" started-at="2020-05-12T11:30:50Z" data-provider="data" finished-at="2020-05-12T11:31:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sachin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUP1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="afterTest" is-config="true" duration-ms="7539" started-at="2020-05-12T11:31:06Z" finished-at="2020-05-12T11:31:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="beforeTest" is-config="true" duration-ms="7530" started-at="2020-05-12T11:31:13Z" finished-at="2020-05-12T11:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSignUP1(java.lang.String)[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="testSignUP1" duration-ms="15289" started-at="2020-05-12T11:31:21Z" data-provider="data" finished-at="2020-05-12T11:31:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tendulkar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUP1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Capgemini.Dlg.NewTest1@366e2eef]" name="afterTest" is-config="true" duration-ms="5542" started-at="2020-05-12T11:31:36Z" finished-at="2020-05-12T11:31:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Capgemini.Dlg.NewTest1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
